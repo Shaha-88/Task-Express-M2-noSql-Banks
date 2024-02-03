@@ -8,9 +8,9 @@ const {
   getAccountByUsername,
 } = require('./accounts.controllers');
 
-router.get('/', accountsGet);
+router.get("/accounts", accountsGet);
 router.get('/:username', getAccountByUsername);
-router.post('/', accountCreate);
+router.post("/accounts", accountCreate);
 
 router.delete('/:accountId', accountDelete);
 
